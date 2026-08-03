@@ -3,11 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>To Do App</title>
 </head>
 <body>
-    
+    <div class="content-container">
+        <div class="todo-list-container">
+            <h2 class="title">To Do App</h2>
+            <div class="add-todo-container">
+                <input type="text" id="new-todo" placeholder="Add a new task">
+                <button id="add-button">Add</button>
+            </div>
+            <h3>To do List</h3>
+            <ul id="todo-list">
+                <li class="todo-item completed">
+                    <input type="checkbox" checked>
+                    <label>Clean room</label>
+                    <div class="todo-actions">
+                        <div class="icon edit-icon">
+                            <img src="edit.svg" alt="Edit">
+                        </div>
+                        <div class="icon delete-icon">
+                            <img src="delete.svg" alt="Delete">
+                        </div>
+                        
+                    </div>
+                </li>
+                
+                <li class="todo-item completed">
+                    <input type="checkbox">
+                    <label>Buy beef</label>
+                    <div class="todo-actions">
+                        <div class="icon edit-icon">
+                            <img src="edit.svg" alt="Edit">
+                        </div>
+                        <div class="icon delete-icon">
+                            <img src="delete.svg" alt="Delete">
+                        </div>                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-    
 </body>
 </html>
