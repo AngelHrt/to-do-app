@@ -1,24 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+
     <title>To Do App</title>
 </head>
+
 <body>
-    <div class="content-container">
-        <div class="todo-list-container">
-            <h2 class="title">To Do App</h2>
+
+    <main class="content-container">
+
+        <section class="todo-list-container">
+
+            <header class="todo-header">
+                <h1 class="title">Tareas</h1>
+                <p>Enfoque y claridad para hoy.</p>
+            </header>
+
             <div class="add-todo-container">
-                <input type="text" id="new-todo" placeholder="Add a new task">
-                <button id="add-button">Add</button>
+                <button id="add-button" aria-label="Agregar tarea">
+                    <img src="add.svg" alt="">
+                </button>
+
+                <input
+                    type="text"
+                    id="new-todo"
+                    placeholder="¿Qué hay que hacer?"
+                >
             </div>
-            <h3>To do List</h3>
-            <ul id="todo-list"></ul>
-        </div>
-    </div>
+
+            <section class="tasks-section">
+                <ul id="todo-list"></ul>
+            </section>
+
+            <section class="completed-section">
+                <h2>COMPLETADAS</h2>
+                <ul id="completed-list"></ul>
+            </section>
+
+            <footer class="progress-section">
+                <div class="progress-header">
+                    <div>
+                        <span>PROGRESO</span>
+                        <strong id="progress-text">0 de 0 tareas pendientes</strong>
+                    </div>
+
+                    <strong id="progress-percent">0%</strong>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+            </footer>
+
+        </section>
+
+    </main>
 
 </body>
 </html>
