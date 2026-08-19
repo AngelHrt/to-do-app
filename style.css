@@ -23,22 +23,48 @@ body {
     padding: 20px;
 }
 
-/* CONTENEDOR PRINCIPAL */
+/* CONTENEDOR */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #29222a;
+    color: #d9dce7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* CONTENEDOR */
 
 .content-container {
     width: 100%;
-    max-width: 326px;
+    max-width: 400px;
 }
 
 .todo-list-container {
     width: 100%;
-    min-height: 490px;
+    min-height: 600px;
 
-    padding: 30px 28px 27px;
+    padding: 36px 32px 32px;
 
     background-color: #211f27;
     border: 1px solid #292730;
-    border-radius: 9px;
+    border-radius: 10px;
 
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
@@ -46,21 +72,21 @@ body {
 /* HEADER */
 
 .todo-header {
-    margin-bottom: 28px;
+    margin-bottom: 32px;
 }
 
 .todo-header h1 {
     color: #dfe2ec;
-    font-size: 27px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 1.1;
 
-    margin-bottom: 7px;
+    margin-bottom: 9px;
 }
 
 .todo-header p {
     color: #777480;
-    font-size: 9px;
+    font-size: 12px;
     font-weight: 400;
 }
 
@@ -70,27 +96,27 @@ body {
     position: relative;
 
     width: 100%;
-    height: 33px;
+    height: 42px;
 
-    margin-bottom: 28px;
+    margin-bottom: 30px;
 }
 
 #new-todo {
     width: 100%;
     height: 100%;
 
-    padding: 0 12px 0 36px;
+    padding: 0 14px 0 44px;
 
     border: 1px solid #1c2733;
     outline: none;
 
-    border-radius: 7px;
+    border-radius: 8px;
 
     background-color: #111c27;
     color: #c7cad4;
 
     font-family: inherit;
-    font-size: 9px;
+    font-size: 12px;
 }
 
 #new-todo::placeholder {
@@ -101,7 +127,7 @@ body {
     border-color: #283746;
 }
 
-/* Botón */
+/* BOTÓN */
 
 #add-button {
     position: absolute;
@@ -110,8 +136,8 @@ body {
     left: 0;
     top: 0;
 
-    width: 33px;
-    height: 33px;
+    width: 42px;
+    height: 42px;
 
     display: flex;
     align-items: center;
@@ -124,8 +150,8 @@ body {
 }
 
 #add-button img {
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
 
     object-fit: contain;
 
@@ -134,6 +160,16 @@ body {
 
 #add-button:hover img {
     opacity: 1;
+}
+
+#add-button span {
+    color: #9fa8b5;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#add-button span:hover {
+    color: #d9dce7;
 }
 
 /* LISTA */
@@ -148,15 +184,15 @@ body {
     align-items: center;
 
     width: 100%;
-    min-height: 38px;
+    min-height: 46px;
 
-    padding: 0 9px;
+    padding: 0 12px;
 
-    margin-bottom: 7px;
+    margin-bottom: 8px;
 
     background-color: #111c27;
 
-    border-radius: 6px;
+    border-radius: 7px;
 }
 
 /* CHECKBOX */
@@ -166,8 +202,8 @@ body {
 
     flex-shrink: 0;
 
-    width: 14px;
-    height: 14px;
+    width: 17px;
+    height: 17px;
 
     border: 1px solid #59636e;
     border-radius: 50%;
@@ -183,8 +219,8 @@ body {
 .todo-item input[type="checkbox"]::before {
     content: "";
 
-    width: 8px;
-    height: 8px;
+    width: 9px;
+    height: 9px;
 
     border-radius: 50%;
 
@@ -209,11 +245,11 @@ body {
 .todo-item label {
     flex: 1;
 
-    margin-left: 8px;
+    margin-left: 10px;
 
     color: #b9bdc8;
 
-    font-size: 8px;
+    font-size: 12px;
     font-weight: 500;
 
     cursor: default;
@@ -234,14 +270,14 @@ body {
     display: flex;
     align-items: center;
 
-    gap: 8px;
+    gap: 10px;
 
-    margin-left: 8px;
+    margin-left: 10px;
 }
 
 .icon {
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
 
     display: flex;
     align-items: center;
@@ -266,24 +302,24 @@ body {
 /* COMPLETADAS */
 
 .completed-section {
-    margin-top: 27px;
+    margin-top: 32px;
 }
 
 .completed-section h2 {
-    margin-bottom: 11px;
+    margin-bottom: 13px;
 
     color: #6d6b73;
 
-    font-size: 7px;
+    font-size: 10px;
     font-weight: 700;
 
-    letter-spacing: 0.8px;
+    letter-spacing: 1px;
 }
 
 /* PROGRESO */
 
 .progress-section {
-    margin-top: 45px;
+    margin-top: 50px;
 }
 
 .progress-header {
@@ -291,40 +327,40 @@ body {
     justify-content: space-between;
     align-items: flex-end;
 
-    margin-bottom: 7px;
+    margin-bottom: 8px;
 }
 
 .progress-header div {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 3px;
 }
 
 .progress-header span {
     color: #6d6b73;
 
-    font-size: 7px;
+    font-size: 10px;
     font-weight: 700;
 
-    letter-spacing: 0.8px;
+    letter-spacing: 1px;
 }
 
 .progress-header strong {
     color: #bfc1cc;
 
-    font-size: 8px;
+    font-size: 11px;
     font-weight: 600;
 }
 
 #progress-percent {
     color: #9b9aa5;
 
-    font-size: 9px;
+    font-size: 12px;
 }
 
 .progress-bar {
     width: 100%;
-    height: 3px;
+    height: 4px;
 
     background-color: #26323a;
 
@@ -344,16 +380,6 @@ body {
     transition: width 0.25s ease;
 }
 
-#add-button span {
-    color: #9fa8b5;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-#add-button span:hover {
-    color: #d9dce7;
-}
-
 /* RESPONSIVE */
 
 @media (max-width: 400px) {
@@ -362,6 +388,15 @@ body {
     }
 
     .todo-list-container {
-        padding: 28px 25px 25px;
+        min-height: 560px;
+        padding: 30px 25px 28px;
+    }
+
+    .todo-header h1 {
+        font-size: 27px;
+    }
+
+    .todo-header p {
+        font-size: 11px;
     }
 }
